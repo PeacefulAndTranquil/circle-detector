@@ -12,7 +12,8 @@ namespace MyApp
             Console.Write("Provide an input\n>");
             string inp = Console.ReadLine();
             Console.WriteLine("Processing...");
-            Thread.Sleep(7);
+            Thread.Sleep(7000);
+
             string outp = "Welcome to the Awesome Circle Identifier\nProvide an input\n>" + inp + "\nProcessing...";
             //regex heavily modified from https://stackoverflow.com/a/25301980
             outp = new Regex(@"(?!(?:o|O|i|j|:|\?|\!|;|\.|[\((o|O|i|\.)\)]|[[\(\)]|\n))(.)").Replace(outp, " ");
